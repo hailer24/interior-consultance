@@ -1,0 +1,217 @@
+* {
+  font-family: "Poppins", sans-serif;
+
+  color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+
+  background: #181719;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+body {
+  background-color: #f3f3f3;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  padding: 5vh 5vw;
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 5vw;
+  color: #ffffff;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+li a {
+  cursor: pointer;
+}
+.active,
+a:hover {
+  transition: 0.15s;
+  border-bottom: solid #fff;
+}
+
+.logo {
+  font-family: "Crimson Pro";
+  font-weight: lighter;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #fff;
+  cursor: pointer;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  padding-top: 150px;
+}
+.img1 {
+  width: 820px;
+}
+.content .title {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+  padding-bottom: 40px;
+}
+.content {
+  padding-bottom: 5vh;
+}
+
+.content .text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  max-width: 420px;
+  color: #ffffff;
+}
+
+.tweet {
+  width: 410px;
+  height: fit-content;
+  position: relative;
+  top: -10vh;
+  left: 20vw;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img2 {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.tweet .profile {
+  display: flex;
+  padding: 15px;
+}
+
+.tweet .profile_id {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_id .name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 17px;
+  margin-bottom: unset;
+  align-items: center;
+}
+
+.profile_id .job {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #828282;
+}
+.readMore {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.tweet-content {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 20px;
+  max-width: 280px;
+}
+.openMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.closeMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 20px;
+  z-index: 6;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .img1 {
+    width: 90vw;
+  }
+  .openMenu {
+    display: block;
+  }
+  .menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #181719;
+    transition: top 1s ease;
+    display: flex;
+  }
+  li {
+    margin-bottom: 40px;
+    background-color: none;
+  }
+  .closeMenu {
+    display: unset;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 20px;
+
+    z-index: 6;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .tweet {
+    width: 200px;
+  }
+}
